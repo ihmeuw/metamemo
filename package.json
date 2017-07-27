@@ -1,0 +1,27 @@
+{
+  "name": "metamemo",
+  "version": "1.0.0",
+  "description": "A library to encapsulate memoized metadata transformations.",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "$(npm bin)/nyc npm test",
+    "lint": "$(npm bin)/tslint -p ./tsconfig.json",
+    "test": "$(npm bin)/_mocha --compilers ts:ts-node/register"
+  },
+  "author": "Gabe Medrash <gmedrash@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/lodash": "^4.14.71",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2"
+  }
+}
