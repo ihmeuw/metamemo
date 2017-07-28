@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build:commonjs": "NODE_ENV=production tsc -p ./tsconfig.commonjs.json",
     "build:es": "NODE_ENV=production tsc -p ./tsconfig.es.json",
