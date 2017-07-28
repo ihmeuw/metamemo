@@ -2,8 +2,12 @@
   "name": "metamemo",
   "version": "1.0.0",
   "description": "A library to encapsulate memoized metadata transformations.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
   "scripts": {
+    "build:commonjs": "NODE_ENV=production tsc -p ./tsconfig.commonjs.json",
+    "build:es": "NODE_ENV=production tsc -p ./tsconfig.es.json",
     "coverage": "$(npm bin)/nyc npm test",
     "lint": "$(npm bin)/tslint -p ./tsconfig.json",
     "test": "$(npm bin)/_mocha --compilers ts:ts-node/register"
